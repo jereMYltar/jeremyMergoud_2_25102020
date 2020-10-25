@@ -1,0 +1,4 @@
+#ignore les fichiers temporaires à la racine et dans les sous-dossiers
+~*
+*/**/~*
+Consignes/
