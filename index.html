@@ -3,59 +3,59 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
-	<style type="text/css" url="index_style.css"></style>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 
-	<header> <!-- Here is the header -->
-		<h1>Reservia</h1>
-		<div>
-			<a href="#">Hébergement</a>
-			<a href="#">Activités</a>
-			<a href="#">S'inscrire</a>
-		</div>
+	<header class="layout"> <!-- Here is the header -->
+		<img src="images/logo/Reservia.svg" class="logo" alt="Logo de Reservia">
+		<nav>
+			<a href="#Host">Hébergement</a>
+			<a href="#Activity">Activités</a>
+			<a href="#" class="registration">S'inscrire</a>
+		</nav>
 	</header>
 
-	<section> <!-- Title -->
+	<section class="layout"> <!-- Title -->
 		<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 		<p>En plein centre ville ou en pleine nature</p>	
 	</section>
 
-	<section> <!-- search bar & filter -->
+	<section class="layout"> <!-- search bar & filter -->
 		<form>
 			<div> <!-- search bar -->
-				<img href="icons/search-solid.svg" alt="Search icon">
+				<img src="icons/search-solid.svg" class="icons" alt="Search icon" />
 				<input type="text" placeholder="Sélectionner votre ville" id="" />
-				<input type="submit" value="Rechercher">
+				<input type="submit" value="Rechercher" />
 			</div>
-			<div>
+			<div class="filters">
 				<h1>Filtres</h1>
-				<div>
-					<img src="icons/money-bill-wave-solid.svg" alt="Money icon">
-					<input type="button" value="Économique" name="eco">
+				<div class="button">
+					<img src="icons/money-bill-wave-solid.svg" class="icons" alt="Money icon" />
+					<input type="button" value="Économique" name="eco" />
 				</div>
-				<div>
-					<img src="icons/child-solid.svg" alt="Child icon">
-					<input type="button" value="Familial" name="family">
+				<div class="button">
+					<img src="icons/child-solid.svg" class="icons" alt="Child icon" />
+					<input type="button" value="Familial" name="family" />
 				</div>
-				<div>
-					<img src="icons/heart-solid.svg" alt="Heart icon">
-					<input type="button" value="Romantique" name="love">
+				<div class="button">
+					<img src="icons/heart-solid.svg" class="icons" alt="Heart icon" />
+					<input type="button" value="Romantique" name="love" />
 				</div>
-				<div>
-					<img src="icons/dog-solid.svg" alt="Pet icon">
-					<input type="button" value="Animaux autorisés" name="pets">
+				<div class="button">
+					<img src="icons/dog-solid.svg" class="icons" alt="Pet icon" />
+					<input type="button" value="Animaux autorisés" name="pets" />
 				</div>
 			</div>
 		</form>
 		<div> <!-- info host number -->
-			<img href="icons/info-circle-solid.svg" alt="Info icon">
-			<p>Plus de 500 logements sont disponibles dans cette ville.</p>
+			<img src="icons/info-circle-solid.svg" class="icons" alt="Info icon" />
+			Plus de 500 logements sont disponibles dans cette ville.
 		</div>
 	</section>
 
-	<section> <!-- Host & popularity -->
-		<article>
+	<section class="layout"> <!-- Host & popularity -->
+		<article id="Host">
 			<h1>Hébergement à Marseille</h1>
 			<div> <!-- Host list -->
 				
@@ -65,15 +65,15 @@
 		<aside>
 			<div>
 				<h1>Les plus populaires</h1>
-				<img href="icons/chart-line-solid.svg" alt="Chart icon">
+				<img src="icons/chart-line-solid.svg" class="icons" alt="Chart icon" />
 			</div>
-			<div> <!-- Popular list -->
+			<div> <!-- Popular list --> 
 				
 			</div>
 		</aside>
 	</section>
 	
-	<section> <!-- Activity -->
+	<section class="layout" id="Activity"> <!-- Activity -->
 		<h1>Activités à Marseile</h1>
 		<div> <!-- Activity list -->
 			
@@ -81,27 +81,29 @@
 	</section>
 
 	<footer> <!-- footer -->
-		<div>
-			<h1>A propos</h1>
-			<ol>
-				<li>Fonctionnement du site</li>
-				<li>Conditions générales de vente</li>
-				<li>Données et confidentialités</li>
-			</ol>
-		</div>
-		<div>
-			<h1>Nos hébergements</h1>
-			<ol>
-				<li>Charte qualité</li>
-				<li>Soumettre votre hôtel</li>
-			</ol>
-		</div>
-		<div>
-			<h1>Assistance</h1>
-			<ol>
-				<li>Centre d'aide</li>
-				<li>Nous contacter</li>
-			</ol>
+		<div class="layout">
+			<div class="part">
+				<h1>A propos</h1>
+				<ol>
+					<li>Fonctionnement du site</li>
+					<li>Conditions générales de vente</li>
+					<li>Données et confidentialités</li>
+				</ol>
+			</div>
+			<div class="part">
+				<h1>Nos hébergements</h1>
+				<ol>
+					<li>Charte qualité WWWWWW</li>
+					<li>Soumettre votre hôtel</li>
+				</ol>
+			</div>
+			<div class="part">
+				<h1>Assistance</h1>
+				<ol>
+					<li>Centre d'aide</li>
+					<li>Nous contacter</li>
+				</ol>
+			</div>
 		</div>
 	</footer>
 
