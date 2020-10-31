@@ -31,18 +31,33 @@ body {
 h1 {
 	font-family: "RalewayBold", Arial, serif;
 	font-size: 1.3em;
-	margin: 50px 0 0 0;
 }
 
 p {
 	font-size: 1.0em;
-	margin: 10px 0 0 0;
 }
 
 
 
 
 /* Header */
+
+.logo {
+	margin-top: 50px;
+}
+
+.registration {
+	font-family: "RalewayBold", Arial, serif;
+	color: #0065FC;
+}
+
+.title h1 {
+	margin: 50px 0 0 0;
+}
+
+.title p {
+	margin: 10px 0 0 0;
+}
 
 header {
 	display: flex;
@@ -69,15 +84,6 @@ nav a:hover {
 	font-weight: bold;
 }
 
-.logo {
-	margin-top: 50px;
-}
-
-.registration {
-	font-family: "RalewayBold", Arial, serif;
-	color: #0065FC;
-}
-
 
 
 
@@ -86,7 +92,7 @@ nav a:hover {
 .search {
 	display: flex;
 	align-items: center;
-	margin: 20px 0;
+	margin: 20px 0 0 0;
 }
 
 .search div {
@@ -135,12 +141,7 @@ nav a:hover {
 .filters {
 	display: flex;
 	align-items: center;
-}
-
-h1.filters {
-	margin: none; /* trouver pour changer ça. 
-	Peut être en déplaçant les marges à chaque endroit où il y en 
-	a une et pas dans les zones générique h1 et p */
+	margin: 30px 0 0 0;
 }
 
 .button {
@@ -181,6 +182,19 @@ h1.filters {
 
 
 
+/* Informationnal row */
+
+.infos {
+	margin: 40px 0;
+	display: flex;
+	align-items: center;
+}
+
+.infos .icons {
+	height: 25px;
+	width: 25px;
+	margin-right: 10px;
+}
 
 
 
@@ -188,7 +202,8 @@ h1.filters {
 
 
 
-/* Footer */ /* remettre flex: 1; là où il faut */
+
+/* Footer */
 
 footer {
 	background-color: #f2f2f2;
@@ -220,4 +235,8 @@ footer a {
 
 footer a:hover {
 	color: #0065FC;
+}
+
+.part {
+	flex: 1;
 }
