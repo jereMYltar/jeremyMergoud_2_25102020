@@ -1,3 +1,4 @@
+/* Specifics fonts */
 @font-face {
 	font-family: "RalewayRegular";
 	src: url("../fonts/Raleway/static/Raleway-Regular.ttf");
@@ -8,17 +9,10 @@
 	src: url("../fonts/Raleway/static/Raleway-Bold.ttf");
 }
 
-body {
-	font-family: "RalewayRegular", Arial, serif;
-	margin: 0;
-}
 
 
-.registration {
-	font-family: "RalewayBold", Arial, serif;
-	color: #0065FC;
-}
 
+/* Generals elements */
 .icons {
 	height: 20px;
 	width: 20px;
@@ -29,15 +23,26 @@ body {
 	margin: auto;
 }
 
-.filters {
-	display: flex;
+body {
+	font-family: "RalewayRegular", Arial, serif;
+	margin: 0;
 }
 
-.part {
-	flex: 1;
+h1 {
+	font-family: "RalewayBold", Arial, serif;
+	font-size: 1.3em;
+	margin: 50px 0 0 0;
+}
+
+p {
+	font-size: 1.0em;
+	margin: 10px 0 0 0;
 }
 
 
+
+
+/* Header */
 
 header {
 	display: flex;
@@ -45,7 +50,7 @@ header {
 }
 
 nav {
-	width: 30%;
+	width: 300px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -53,15 +58,124 @@ nav {
 nav a {
 	text-decoration: none;
 	color: black;
-	padding: 50px 0;
+	padding-top: 50px;
 	font-size: 1em;
 }
 
 nav a:hover {
-	padding: 47px 0;
-	border-top: 3px #0065FC solid;
+	padding-top: 48px;
+	border-top: 2px #0065FC solid;
 	color: #0065FC;
 	font-weight: bold;
+}
+
+.logo {
+	margin-top: 50px;
+}
+
+.registration {
+	font-family: "RalewayBold", Arial, serif;
+	color: #0065FC;
+}
+
+
+
+
+/* Search zone */
+
+.search {
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.search div {
+	height: 50px;
+	width: 50px;
+	background-color: #f2f2f2;
+	border-radius: 15px 0 0 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.search input[type=text] {
+	font-family: "RalewayBold", Arial, serif;
+	font-size: 1.0em;
+	height: 46px;
+	width: 235px;
+	border: none;
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.search input[type=submit] {
+	font-family: "RalewayBold", Arial, serif;
+	font-size: 1.1em;
+	color: white;
+	padding: 0 15px;
+	background-color: #0065FC;
+	height: 50px;
+	border-radius: 0 15px 15px 0;
+	border: none;
+	box-shadow: none;
+}
+
+.search input[type=submit]:active {
+	outline: none;
+	background-color: #f2f2f2;
+	color: black;
+}
+
+
+
+
+/* Filters zone */
+
+.filters {
+	display: flex;
+	align-items: center;
+}
+
+h1.filters {
+	margin: none; /* trouver pour changer ça. 
+	Peut être en déplaçant les marges à chaque endroit où il y en 
+	a une et pas dans les zones générique h1 et p */
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	height: 46px;
+	border: 2px solid #f2f2f2;
+	border-radius: 25px;
+	margin-left: 25px;
+}
+
+.button div {
+	height: 50px;
+	width: 50px;
+	background-color: #DEEBFF;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	left: -2px;
+}
+
+.button input[type=button] {
+	font-family: "RalewayBold", Arial, serif;
+	font-size: 1.1em;
+	background-color: white;
+	padding: 0 15px;
+	border: none;
+	box-shadow: none;
+}
+
+.button input[type=button]:active {
+	outline: none;
+	color: #0065FC;
 }
 
 
@@ -70,8 +184,18 @@ nav a:hover {
 
 
 
+
+
+
+
+/* Footer */ /* remettre flex: 1; là où il faut */
+
 footer {
 	background-color: #f2f2f2;
+}
+
+footer div.layout {
+	display: flex;
 }
 
 footer ol {
@@ -79,6 +203,21 @@ footer ol {
 	padding-left: 0;
 }
 
+footer li {
+	margin-top: 10px;
+	font-size: 1.0em;
+}
+
 footer h1 {
 	font-size: 1.1em;
+	margin-bottom: 20px;
+}
+
+footer a {
+	text-decoration: none;
+	color: black;
+}
+
+footer a:hover {
+	color: #0065FC;
 }
