@@ -260,7 +260,6 @@ aside {
 	border: 5px white solid;
 	flex: 1;
 	display: flex ;
-	margin: 0 30px 30px 0;
 }
 
 .tiles h1 {
@@ -311,6 +310,8 @@ aside {
 article .tiles {
 	flex-direction: column;
 	min-width: 200px;
+	margin: 0 30px 30px 0;
+	box-shadow: 5px 5px 10px #e3e3e3;
 }
 
 article .illustration {
@@ -329,6 +330,8 @@ article .photo {
 aside .tiles {
 	flex-direction: row;
 	min-width: 300px;
+	margin: 0 30px 30px 0;
+	box-shadow: 5px 5px 10px #e3e3e3;
 }
 
 aside .illustration {
@@ -344,6 +347,35 @@ aside header {
 	margin: 0 35px 0 0;
 }
 
+
+
+
+/* Main section --> Activity */
+
+.activity {
+	display:flex;
+	max-width:100%;
+	max-height: 450px;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+}
+
+.activity .tiles {
+	flex-direction: column;
+	max-width: 300px;
+	margin: 0 30px 30px 0;
+	box-shadow: 5px 5px 10px #f2f2f2;
+	border: none;
+}
+
+.activity .illustration {
+	max-height: 390px;
+}
+
+.activity .photo {
+	border-radius: 15px 15px 0 0;
+}
 
 
 
