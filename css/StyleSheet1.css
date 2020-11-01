@@ -380,9 +380,9 @@ nav a:hover {
         height: 100%;
     }
 
-        #Activity .group:not(:last-child) {
+    #Activity .group:not(:last-child) {
         margin-right: 30px;
-        }
+    }
 
     #Activity .tiles {
         flex-direction: column;
