@@ -1,0 +1,438 @@
+﻿/* Specifics fonts */
+@font-face {
+    font-family: "RalewayRegular";
+    src: url("../fonts/Raleway/static/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: "RalewayBold";
+    src: url("../fonts/Raleway/static/Raleway-Bold.ttf");
+}
+
+
+
+
+/* Generals elements */
+
+.icons {
+    height: 20px;
+    width: 20px;
+}
+
+.layout {
+    max-width: 1330px;
+    margin: auto;
+}
+
+body {
+    font-family: "RalewayRegular", Arial, serif;
+    margin: 0;
+}
+
+h1 {
+    font-family: "RalewayBold", Arial, serif;
+    font-size: 1.3em;
+    margin: 50px 0 0 0;
+}
+
+h2 {
+    font-family: "RalewayBold", Arial, serif;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+h3 {
+    font-family: "RalewayBold", Arial, serif;
+    font-size: 1.0em;
+    margin: 12px 0 0 0;
+}
+
+h4 {
+    font-family: "RalewayRegular", Arial, serif;
+    font-size: 1.0em;
+    margin: 12px 0 0 0;
+}
+
+p {
+    font-family: "RalewayRegular", Arial, serif;
+    font-size: 0.9em;
+    margin: 12px 0 0 0;
+}
+
+
+
+
+/* Links */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #0065FC;
+    font-weight: bold;
+}
+
+a:focus {
+    outline: none;
+    color: #0065FC;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+
+/* Header */
+
+.logo {
+    margin-top: 50px;
+}
+
+.registration {
+    font-family: "RalewayBold", Arial, serif;
+    color: #0065FC;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    padding-top: 50px;
+    font-size: 1em;
+}
+
+nav a:hover {
+    padding-top: 48px;
+    border-top: 2px #0065FC solid;
+}
+
+
+
+
+/* Search zone */
+
+.search {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 0;
+}
+
+.search div {
+    height: 50px;
+    width: 50px;
+    background-color: #f2f2f2;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input[type=text] {
+    font-family: "RalewayBold", Arial, serif;
+    font-size: 1.0em;
+    height: 46px;
+    width: 235px;
+    border: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.search input[type=submit] {
+    font-family: "RalewayBold", Arial, serif;
+    font-size: 1.1em;
+    color: white;
+    padding: 0 15px;
+    background-color: #0065FC;
+    height: 50px;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    box-shadow: none;
+}
+
+.search input[type=submit]:active {
+    outline: none;
+    background-color: #f2f2f2;
+    color: black;
+}
+
+
+
+
+/* Filters zone */
+
+.filters {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    height: 46px;
+    border: 2px solid #f2f2f2;
+    border-radius: 25px;
+    margin-left: 25px;
+}
+
+.button div {
+    height: 50px;
+    width: 50px;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -2px;
+}
+
+.button input[type=button] {
+    font-family: "RalewayBold", Arial, serif;
+    font-size: 1.1em;
+    background-color: white;
+    padding: 0 15px;
+    border: none;
+    box-shadow: none;
+}
+
+.button input[type=button]:active {
+    outline: none;
+    color: #0065FC;
+}
+
+.button input[type=button]:hover {
+    outline: none;
+    color: #0065FC;
+}
+
+.button input[type=button]:focus {
+    outline: none;
+    color: #0065FC;
+}
+
+
+
+
+/* Informationnal row */
+
+.infos {
+    display: flex;
+    align-items: center;
+}
+
+.infos .icons {
+    height: 25px;
+    width: 25px;
+    margin: 12px 10px 0 0;
+}
+
+
+
+
+/* Blocs gestion */
+
+.bloc {
+    margin-top: 40px;
+    padding: 0 10px 5px 40px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+.bloc header {
+    align-items: flex-end;
+}
+
+.bloc section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.bloc footer {
+    font-family: "RalewayBold", Arial, serif;
+    font-size: 1.0em;
+}
+
+
+
+
+/* Tiles gestion */
+
+.tiles {
+    background-color: white;
+    border-radius: 20px;
+    border: 5px white solid;
+    margin: 0 30px 30px 0;
+    flex: 1;
+    display: flex;
+}
+
+.illustration {
+    flex: 1;
+}
+
+.photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 12px;
+}
+
+.stars {
+    height: 10px;
+    margin: 12px 0 7px 0px;
+    align-self: flex-start
+}
+
+
+
+
+/* Implementation */
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* --> Hosts */
+
+    #Host {
+        flex: 2;
+        margin-right: 40px;
+    }
+
+    #Host .tiles {
+        flex-direction: column;
+        min-width: 200px;
+        box-shadow: 5px 5px 10px #e3e3e3;
+    }
+
+    #Host .illustration {
+        max-height: 120px;
+    }
+
+    #Host .photo {
+        border-radius: 15px 15px 0 0;
+    }
+
+/* --> Popular */
+
+    #Popular {
+        flex: 1;
+    }
+
+    #Popular header {
+        margin: 0 30px 0 0;
+    }
+
+    #Popular .tiles {
+        flex-direction: row;
+        min-width: 300px;
+        box-shadow: 5px 5px 10px #e3e3e3;
+    }
+
+    #Popular .illustration {
+        width: 140px;
+        height: 140px;
+    }
+
+    #Popular .photo {
+        border-radius: 15px 0 0 15px;
+    }
+
+    #Popular .description {
+        flex: 1.5;
+    }
+
+/* --> Activity */
+
+
+    #Activity section {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 25px;
+        height: 450px;
+    }
+
+    #Activity .group {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+        #Activity .group:not(:last-child) {
+        margin-right: 30px;
+        }
+
+    #Activity .tiles {
+        flex-direction: column;
+        margin: 0;
+        padding-bottom: 20px;
+        box-shadow: 5px 5px 10px #f2f2f2;
+        border: none;
+    }
+
+    #Activity .group .tiles:not(:last-child) {
+        margin: 0 0 30px 0;
+    }
+
+    #Activity .illustration {
+        flex: auto;
+    }
+
+    #Activity .photo {
+        border-radius: 15px 15px 0 0;
+    }
+
+    #Activity .description {
+        flex: 0;
+    }
+
+
+
+
+/* Footer */
+
+footer {
+    background-color: #f2f2f2;
+}
+
+footer .layout {
+    display: flex;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+.part {
+    flex: 1;
+}
+footer ol {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+footer li {
+    margin-top: 10px;
+    font-size: 1.0em;
+}

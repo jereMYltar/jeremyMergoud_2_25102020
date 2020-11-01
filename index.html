@@ -2,8 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Reservia</title>
+	<link rel="stylesheet" type="text/css" href="css/StyleSheet1.css">
 </head>
 <body>
 
@@ -18,18 +18,18 @@
 
 	<section class="layout title"> <!-- Title -->
 		<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-		<p>En plein centre ville ou en pleine nature</p>	
+		<h4>En plein centre ville ou en pleine nature</h4>	
 	</section>
 
 	<section class="layout"> <!-- search bar & filter -->
 		<form>
-			<div class="search"> <!-- search bar -->
+			<div class="search"> <!-- Search zone -->
 				<div><img src="icons/map-marker-alt-solid.svg" class="icons" alt="Search icon" /></div>
 				<input type="text" placeholder="Sélectionner votre ville" id="" />
 				<input type="submit" value="Rechercher" />
 			</div>
-			<div class="filters">
-				<h1>Filtres</h1>
+			<div class="filters"> <!-- Filters zone -->
+				<h2>Filtres</h2>
 				<div class="button">
 					<div><img src="icons/money-bill-wave-solid.svg" class="icons" alt="Money icon" /></div>
 					<input type="button" value="Économique" name="eco" />
@@ -48,23 +48,26 @@
 				</div>
 			</div>
 		</form>
-		<div class="infos"> <!-- info host number -->
+		<div class="infos">
+			<!-- Informationnal row -->
 			<img src="icons/info-circle-solid-blue.svg" class="icons" alt="Info icon" />
-			Plus de 500 logements sont disponibles dans cette ville.
+			<h4>Plus de 500 logements sont disponibles dans cette ville.</h4>
 		</div>
 	</section>
 
 	<section class="layout main"> <!-- Host & popularity -->
 		<article id="Host" class="bloc">
-			<h1>Hébergement à Marseille</h1>
-			<div class="hosts"> <!-- Host list -->
+			<header>
+				<h1>Hébergement à Marseille</h1>
+			</header>
+			<section> <!-- Hosts -->
 				<a href="#" class="tiles">
 					<div class="illustration">
 						<img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo chambre" class="photo">
 					</div>
 					<div class="description">
 						<div>
-							<h1>Auberge la Cannebière</h1>
+							<h3>Auberge la Cannebière</h3>
 							<p>Nuit à partir de <strong>25€</strong></p>
 						</div>
 						<div>
@@ -78,7 +81,7 @@
 					</div>
 					<div class="description">
 						<div>
-							<h1>Hôtel du port</h1>
+							<h3>Hôtel du port</h3>
 							<p>Nuit à partir de <strong>52€</strong></p>
 						</div>
 						<div>
@@ -92,7 +95,7 @@
 					</div>
 					<div class="description">
 						<div>
-							<h1>Hôtel les mouettes</h1>
+							<h3>Hôtel les mouettes</h3>
 							<p>Nuit à partir de <strong>76€</strong></p>
 						</div>
 						<div>
@@ -106,7 +109,7 @@
 					</div>
 					<div class="description">
 						<div>
-							<h1>Hôtel de la mer</h1>
+							<h3>Hôtel de la mer</h3>
 							<p>Nuit à partir de <strong>46€</strong></p>
 						</div>
 						<div>
@@ -120,7 +123,7 @@
 					</div>
 					<div class="description">
 						<div>
-							<h1>Auberge Le Panier</h1>
+							<h3>Auberge Le Panier</h3>
 							<p>Nuit à partir de <strong>23€</strong></p>
 						</div>
 						<div>
@@ -134,7 +137,7 @@
 					</div>
 					<div class="description">
 						<div>
-							<h1>Hôtel chez Amina</h1>
+							<h3>Hôtel chez Amina</h3>
 							<p>Nuit à partir de <strong>96€</strong></p>
 						</div>
 						<div>
@@ -142,22 +145,25 @@
 						</div>
 					</div>
 				</a>
-			</div>
-			<a href="#" class="more">Afficher plus</a>
+			</section>
+			<footer>
+                <a href="#" class="more">Afficher plus</a>
+			</footer>
 		</article>
-		<aside class="bloc">
+
+		<aside id="Popular" class="bloc">
 			<header>
 				<h1>Les plus populaires</h1>
 				<img src="icons/chart-line-solid.svg" class="icons" alt="Chart icon" />
 			</header>
-			<div> <!-- Popular list --> 
+			<section> <!-- Popular --> 
 				<a href="#" class="tiles">
 					<div class="illustration">
 						<img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo chambre" class="photo">
 					</div>
 					<div class="description">
 						<div>
-							<h1>Hôtel le soleil du matin</h1>
+							<h3>Hôtel le soleil du matin</h3>
 							<p>Nuit à partir de <strong>128€</strong></p>
 						</div>
 						<div>
@@ -171,7 +177,7 @@
 					</div>
 					<div class="description">
 						<div>
-							<h1>Au cœur de l'eau<br />Chambre d'hôtes</h1>
+							<h3>Au cœur de l'eau<br />Chambre d'hôtes</h3>
 							<p>Nuit à partir de <strong>71€</strong></p>
 						</div>
 						<div>
@@ -185,7 +191,7 @@
 					</div>
 					<div class="description">
 						<div>
-							<h1>Hôtel Tout bleu et Blanc</h1>
+							<h3>Hôtel Tout bleu et Blanc</h3>
 							<p>Nuit à partir de <strong>68€</strong></p>
 						</div>
 						<div>
@@ -193,69 +199,79 @@
 						</div>
 					</div>
 				</a>
-			</div>
+			</section>
 		</aside>
 	</section>
 	
-	<section class="layout" id="Activity"> <!-- Activity -->
-		<h1>Activités à Marseille</h1>
-		<div class="activity">
-			<!-- Activity list -->
-			<a href="#" class="tiles">
-				<div class="illustration">
-					<img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo activité" class="photo">
-				</div>
-				<div class="description">
-					<h1>Vieux Port</h1>
-				</div>
-			</a>
-			<a href="#" class="tiles">
-				<div class="illustration">
-					<img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo activité" class="photo">
-				</div>
-				<div class="description">
-					<h1>Fort de Pomègues</h1>
-				</div>
-			</a>
-			<a href="#" class="tiles">
-				<div class="illustration">
-					<img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Photo activité" class="photo">
-				</div>
-				<div class="description">
-					<h1>Îles du Frioul</h1>
-				</div>
-			</a>
-			<a href="#" class="tiles">
-				<div class="illustration">
-					<img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo activité" class="photo">
-				</div>
-				<div class="description">
-					<h1>Parc National des Calanques</h1>
-				</div>
-			</a>
-			<a href="#" class="tiles">
-				<div class="illustration">
-					<img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Photo activité" class="photo">
-				</div>
-				<div class="description">
-					<h1>Notre-Dame-de-la-Garde</h1>
-				</div>
-			</a>
-			<a href="#" class="tiles">
-				<div class="illustration">
-					<img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo activité" class="photo">
-				</div>
-				<div class="description">
-					<h1>Parc Longchamp</h1>
-				</div>
-			</a>
-		</div>		
+	<section class="layout" id="Activity">
+		<header>
+            <h1>Activités à Marseille</h1>
+		</header>
+		<section>
+			<!-- Activity -->
+			<div class="group">
+				<a href="#" class="tiles">
+					<div class="illustration">
+						<img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo activité" class="photo">
+					</div>
+					<div class="description">
+						<h3>Vieux Port</h3>
+					</div>
+				</a>
+			</div>
+			<div class="group">
+				<a href="#" class="tiles">
+					<div class="illustration">
+						<img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo activité" class="photo">
+					</div>
+					<div class="description">
+						<h3>Fort de Pomègues</h3>
+					</div>
+				</a>
+				<a href="#" class="tiles">
+					<div class="illustration">
+						<img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Photo activité" class="photo">
+					</div>
+					<div class="description">
+						<h3>Îles du Frioul</h3>
+					</div>
+				</a>
+			</div>
+			<div class="group">
+				<a href="#" class="tiles">
+					<div class="illustration">
+						<img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo activité" class="photo">
+					</div>
+					<div class="description">
+						<h3>Parc National des Calanques</h3>
+					</div>
+				</a>
+			</div>
+			<div class="group">
+				<a href="#" class="tiles">
+					<div class="illustration">
+						<img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Photo activité" class="photo">
+					</div>
+					<div class="description">
+						<h3>Notre-Dame-de-la-Garde</h3>
+					</div>
+				</a>
+				<a href="#" class="tiles">
+					<div class="illustration">
+						<img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo activité" class="photo">
+					</div>
+					<div class="description">
+						<h3>Parc Longchamp</h3>
+					</div>
+				</a>
+			</div>
+		</section>		
 	</section>
 
 	<footer> <!-- footer -->
 		<div class="layout">
 			<div class="part">
-				<h1>A propos</h1>
+				<h2>A propos</h2>
 				<ol>
 					<li><a href="">Fonctionnement du site</a></li>
 					<li><a href="">Conditions générales de vente</a></li>
@@ -263,14 +279,14 @@
 				</ol>
 			</div>
 			<div class="part">
-				<h1>Nos hébergements</h1>
+				<h2>Nos hébergements</h2>
 				<ol>
 					<li><a href="">Charte qualité</a></li>
 					<li><a href="">Soumettre votre hôtel</a></li>
 				</ol>
 			</div>
 			<div class="part">
-				<h1>Assistance</h1>
+				<h2>Assistance</h2>
 				<ol>
 					<li><a href="">Centre d'aide</a></li>
 					<li><a href="">Nous contacter</a></li>
