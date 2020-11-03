@@ -14,6 +14,10 @@
 
 /* Generals elements */
 
+* {
+    font-family: "RalewayBold", Arial, serif;
+}
+
 .icons {
     height: 20px;
     width: 20px;
@@ -25,24 +29,20 @@
 }
 
 body {
-    font-family: "RalewayRegular", Arial, serif;
     margin: 0;
 }
 
 h1 {
-    font-family: "RalewayBold", Arial, serif;
     font-size: 1.3em;
     margin: 50px 0 0 0;
 }
 
 h2 {
-    font-family: "RalewayBold", Arial, serif;
     font-size: 1.1em;
     margin: 0;
 }
 
 h3 {
-    font-family: "RalewayBold", Arial, serif;
     font-size: 1.0em;
     margin: 12px 0 0 0;
 }
@@ -91,7 +91,6 @@ a:focus {
 }
 
 .registration {
-    font-family: "RalewayBold", Arial, serif;
     color: #0065FC;
 }
 
@@ -137,8 +136,7 @@ nav a:hover {
     align-items: center;
 }
 
-.search input[type=text] {
-    font-family: "RalewayBold", Arial, serif;
+.search_txt {
     font-size: 1.0em;
     height: 46px;
     width: 235px;
@@ -147,8 +145,7 @@ nav a:hover {
     border-bottom: 1px solid #f2f2f2;
 }
 
-.search input[type=submit] {
-    font-family: "RalewayBold", Arial, serif;
+.search_but {
     font-size: 1.1em;
     color: white;
     padding: 0 15px;
@@ -157,12 +154,25 @@ nav a:hover {
     border-radius: 0 15px 15px 0;
     border: none;
     box-shadow: none;
+    cursor: pointer;
 }
 
-.search input[type=submit]:active {
+.search_but:active {
     outline: none;
-    background-color: #f2f2f2;
-    color: black;
+    background-color: #DEEBFF;
+    color: #0065FC;
+}
+
+.search_but:hover {
+    outline: none;
+    background-color: #DEEBFF;
+    color: #0065FC;
+}
+
+.search_but:focus {
+    outline: none;
+    background-color: #DEEBFF;
+    color: #0065FC;
 }
 
 
@@ -174,19 +184,23 @@ nav a:hover {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .button {
     display: flex;
     align-items: center;
-    height: 46px;
+    height: 50px;
     border: 2px solid #f2f2f2;
     border-radius: 25px;
-    margin-left: 25px;
+    margin: 10px 12px;
+    font-size: 1.1em;
+    background-color: white;
+    padding: 0 15px 0 0;
+    cursor: pointer;
 }
 
-.button div {
+.icon_bg {
     height: 50px;
     width: 50px;
     background-color: #DEEBFF;
@@ -196,29 +210,24 @@ nav a:hover {
     align-items: center;
     position: relative;
     left: -2px;
+    margin-right: 10px;
 }
 
-.button input[type=button] {
-    font-family: "RalewayBold", Arial, serif;
-    font-size: 1.1em;
-    background-color: white;
-    padding: 0 15px;
-    border: none;
-    box-shadow: none;
-}
-
-.button input[type=button]:active {
+.button:active {
     outline: none;
+    background-color: #DEEBFF;
     color: #0065FC;
 }
 
-.button input[type=button]:hover {
+.button:hover {
     outline: none;
+    background-color: #DEEBFF;
     color: #0065FC;
 }
 
-.button input[type=button]:focus {
+.button:focus {
     outline: none;
+    background-color: #DEEBFF;
     color: #0065FC;
 }
 
@@ -250,18 +259,19 @@ nav a:hover {
     border-radius: 20px;
 }
 
-.bloc header {
+.top_bloc {
+    display: flex;
+    justify-content: space-between;
     align-items: flex-end;
 }
 
-.bloc section {
+.center_bloc {
     display: flex;
     flex-wrap: wrap;
     margin-top: 25px;
 }
 
-.bloc footer {
-    font-family: "RalewayBold", Arial, serif;
+.bottom_bloc {
     font-size: 1.0em;
 }
 
@@ -315,98 +325,98 @@ nav a:hover {
 
 /* --> Hosts */
 
-    #Host {
-        flex: 2;
-        margin-right: 40px;
-    }
+.host_bloc {
+    flex: 2;
+    margin-right: 40px;
+}
 
-    #Host .tiles {
-        flex-direction: column;
-        min-width: 200px;
-        box-shadow: 5px 5px 10px #e3e3e3;
-    }
+.host_bloc .tiles {
+    flex-direction: column;
+    min-width: 200px;
+    box-shadow: 5px 5px 10px #e3e3e3;
+}
 
-    #Host .illustration {
-        max-height: 120px;
-    }
+.host_bloc .illustration {
+    max-height: 120px;
+}
 
-    #Host .photo {
-        border-radius: 15px 15px 0 0;
-    }
+.host_bloc .photo {
+    border-radius: 15px 15px 0 0;
+}
 
 /* --> Popular */
 
-    #Popular {
-        flex: 1;
-    }
+.pop_bloc {
+    flex: 1;
+}
 
-    #Popular header {
-        margin: 0 30px 0 0;
-    }
+.pop_bloc header {
+    margin: 0 30px 0 0;
+}
 
-    #Popular .tiles {
-        flex-direction: row;
-        min-width: 300px;
-        box-shadow: 5px 5px 10px #e3e3e3;
-    }
+.pop_bloc .tiles {
+    flex-direction: row;
+    min-width: 300px;
+    box-shadow: 5px 5px 10px #e3e3e3;
+}
 
-    #Popular .illustration {
-        width: 140px;
-        height: 140px;
-    }
+.pop_bloc .illustration {
+    width: 140px;
+    height: 140px;
+}
 
-    #Popular .photo {
-        border-radius: 15px 0 0 15px;
-    }
+.pop_bloc .photo {
+    border-radius: 15px 0 0 15px;
+}
 
-    #Popular .description {
-        flex: 1.5;
-    }
+.pop_bloc .description {
+    flex: 1.5;
+}
 
 /* --> Activity */
 
 
-    #Activity section {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 25px;
-        height: 450px;
-    }
+.activity_bloc section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    height: 450px;
+}
 
-    #Activity .group {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-    }
+.activity_bloc .group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 
-    #Activity .group:not(:last-child) {
-        margin-right: 30px;
-    }
+.activity_bloc .group:not(:last-child) {
+    margin-right: 30px;
+}
 
-    #Activity .tiles {
-        flex-direction: column;
-        margin: 0;
-        padding-bottom: 20px;
-        box-shadow: 5px 5px 10px #f2f2f2;
-        border: none;
-    }
+.activity_bloc .tiles {
+    flex-direction: column;
+    margin: 0;
+    padding-bottom: 20px;
+    box-shadow: 5px 5px 10px #f2f2f2;
+    border: none;
+}
 
-    #Activity .group .tiles:not(:last-child) {
-        margin: 0 0 30px 0;
-    }
+.activity_bloc .group .tiles:not(:last-child) {
+    margin: 0 0 30px 0;
+}
 
-    #Activity .illustration {
-        flex: auto;
-    }
+.activity_bloc .illustration {
+    flex: auto;
+}
 
-    #Activity .photo {
-        border-radius: 15px 15px 0 0;
-    }
+.activity_bloc .photo {
+    border-radius: 15px 15px 0 0;
+}
 
-    #Activity .description {
-        flex: 0;
-    }
+.activity_bloc .description {
+    flex: 0;
+}
 
 
 

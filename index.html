@@ -25,27 +25,27 @@
 		<form>
 			<div class="search"> <!-- Search zone -->
 				<div><img src="icons/map-marker-alt-solid.svg" class="icons" alt="Search icon" /></div>
-				<input type="text" placeholder="Sélectionner votre ville" id="" />
-				<input type="submit" value="Rechercher" />
+				<input type="text" placeholder="Sélectionner votre ville" class="search_txt" id="" />
+				<input type="submit" value="Rechercher" class="search_but" />
 			</div>
 			<div class="filters"> <!-- Filters zone -->
 				<h2>Filtres</h2>
-				<div class="button">
-					<div><img src="icons/money-bill-wave-solid.svg" class="icons" alt="Money icon" /></div>
-					<input type="button" value="Économique" name="eco" />
-				</div>
-				<div class="button">
-					<div><img src="icons/child-solid.svg" class="icons" alt="Child icon" /></div>
-					<input type="button" value="Familial" name="family" />
-				</div>
-				<div class="button">
-					<div><img src="icons/heart-solid.svg" class="icons" alt="Heart icon" /></div>
-					<input type="button" value="Romantique" name="love" />
-				</div>
-				<div class="button">
-					<div><img src="icons/dog-solid.svg" class="icons" alt="Pet icon" /></div>
-					<input type="button" value="Animaux autorisés" name="pets" />
-				</div>
+				<button type="button" name="eco" class="button">
+					<span class="icon_bg"><img src="icons/money-bill-wave-solid.svg" class="icons" alt="Money icon" /></span>
+					<span>Économique</span>
+				</button>
+				<button type="button" name="eco" class="button">
+					<span class="icon_bg"><img src="icons/child-solid.svg" class="icons" alt="Child icon" /></span>
+					<span>Familial</span>
+				</button>
+				<button type="button" name="eco" class="button">
+					<span class="icon_bg"><img src="icons/heart-solid.svg" class="icons" alt="Heart icon" /></span>
+					<span>Romantique</span>
+				</button>
+				<button type="button" name="eco" class="button">
+					<span class="icon_bg"><img src="icons/dog-solid.svg" class="icons" alt="Pet icon" /></span>
+					<span>Animaux autorisés</span>
+				</button>
 			</div>
 		</form>
 		<div class="infos">
@@ -56,11 +56,11 @@
 	</section>
 
 	<section class="layout main"> <!-- Host & popularity -->
-		<article id="Host" class="bloc">
-			<header>
+		<article id="Host" class="bloc host_bloc">
+			<div class="top_bloc">
 				<h1>Hébergement à Marseille</h1>
-			</header>
-			<section> <!-- Hosts -->
+			</div>
+			<div class="center_bloc"> <!-- Hosts -->
 				<a href="#" class="tiles">
 					<div class="illustration">
 						<img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo chambre" class="photo">
@@ -145,18 +145,18 @@
 						</div>
 					</div>
 				</a>
-			</section>
-			<footer>
+			</div>
+			<div class="bottom_bloc">
                 <a href="#" class="more">Afficher plus</a>
-			</footer>
+			</div>
 		</article>
 
-		<aside id="Popular" class="bloc">
-			<header>
+		<aside id="Popular" class="bloc pop_bloc">
+			<div class="top_bloc">
 				<h1>Les plus populaires</h1>
 				<img src="icons/chart-line-solid.svg" class="icons" alt="Chart icon" />
-			</header>
-			<section> <!-- Popular --> 
+			</div>
+			<div class="center_bloc"> <!-- Popular --> 
 				<a href="#" class="tiles">
 					<div class="illustration">
 						<img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo chambre" class="photo">
@@ -199,15 +199,15 @@
 						</div>
 					</div>
 				</a>
-			</section>
+			</div>
 		</aside>
 	</section>
 	
-	<section class="layout" id="Activity">
-		<header>
+	<section class="layout activity_bloc" id="Activity">
+		<div class="top_bloc">
             <h1>Activités à Marseille</h1>
-		</header>
-		<section>
+		</div>
+		<div class="center_bloc">
 			<!-- Activity -->
 			<div class="group">
 				<a href="#" class="tiles">
@@ -265,7 +265,7 @@
 					</div>
 				</a>
 			</div>
-		</section>		
+		</div>		
 	</section>
 
 	<footer> <!-- footer -->
