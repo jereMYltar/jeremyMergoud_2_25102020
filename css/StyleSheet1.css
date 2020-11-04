@@ -16,6 +16,7 @@
 
 * {
     font-family: "RalewayBold", Arial, serif;
+    margin: 0;
 }
 
 .icons {
@@ -28,35 +29,51 @@
     margin: auto;
 }
 
-body {
-    margin: 0;
-}
-
-h1 {
+.formatting1 {
     font-size: 1.3em;
     margin: 50px 0 0 0;
 }
 
-h2 {
+.formatting2 {
     font-size: 1.1em;
     margin: 0;
 }
 
-h3 {
+.formatting3 {
     font-size: 1.0em;
     margin: 12px 0 0 0;
 }
 
-h4 {
+.formatting4 {
     font-family: "RalewayRegular", Arial, serif;
     font-size: 1.0em;
     margin: 12px 0 0 0;
 }
 
-p {
+.formatting5 {
     font-family: "RalewayRegular", Arial, serif;
     font-size: 0.9em;
     margin: 12px 0 0 0;
+}
+
+.size40 {
+    height: 40%;
+}
+
+.size45 {
+    height: 45%;
+}
+
+.size50 {
+    height: 50%;
+}
+
+.size55 {
+    height: 55%;
+}
+
+.size60 {
+    height: 60%;
 }
 
 
@@ -126,7 +143,7 @@ nav a:hover {
     margin: 20px 0 0 0;
 }
 
-.search div {
+.search_ico {
     height: 50px;
     width: 50px;
     background-color: #f2f2f2;
@@ -269,6 +286,7 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     margin-top: 25px;
+    justify-content: center;
 }
 
 .bottom_bloc {
@@ -375,47 +393,47 @@ nav a:hover {
 
 /* --> Activity */
 
+.activity_bloc .center_bloc {
+    margin-right: -30px;
 
-.activity_bloc section {
+}
+
+.sub_bloc {
+    flex: 1;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 25px;
-    height: 450px;
 }
+
 
 .activity_bloc .group {
     flex: 1;
     display: flex;
     flex-direction: column;
-    height: 100%;
-}
-
-.activity_bloc .group:not(:last-child) {
     margin-right: 30px;
+    min-width: 250px;
+    height: 450px;
 }
 
 .activity_bloc .tiles {
+    flex: auto;
     flex-direction: column;
-    margin: 0;
+    margin: 0 0 30px 0;
     padding-bottom: 20px;
     box-shadow: 5px 5px 10px #f2f2f2;
     border: none;
 }
 
-.activity_bloc .group .tiles:not(:last-child) {
-    margin: 0 0 30px 0;
-}
-
 .activity_bloc .illustration {
-    flex: auto;
+    position: relative;
 }
 
 .activity_bloc .photo {
     border-radius: 15px 15px 0 0;
+    position: absolute;
 }
 
 .activity_bloc .description {
-    flex: 0;
+    flex: none;
 }
 
 
@@ -423,26 +441,26 @@ nav a:hover {
 
 /* Footer */
 
-footer {
+.bottom_page {
     background-color: #f2f2f2;
+    margin-top: 20px;
 }
 
-footer .layout {
+.bottom_page .layout {
     display: flex;
     padding: 50px 0;
-    margin-top: 50px;
 }
 
 .part {
     flex: 1;
 }
-footer ol {
+.bottom_page ol {
     list-style-type: none;
     padding-left: 0;
     margin-top: 20px;
 }
 
-footer li {
+.bottom_page li {
     margin-top: 10px;
     font-size: 1.0em;
 }
