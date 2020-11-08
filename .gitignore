@@ -6,3 +6,4 @@ Consignes/
 
 #ignore le dossier Visual Studio
 .vs/
+/debug.log
