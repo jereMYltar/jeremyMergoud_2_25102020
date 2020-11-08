@@ -3,5 +3,5 @@
 */**/~*
 Consignes/
 
-#ignore le fichier de debug
-debug.log
+#ignore le dossier Visual Studio
+.vs/
