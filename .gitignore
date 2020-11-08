@@ -2,3 +2,6 @@
 ~*
 */**/~*
 Consignes/
+
+#ignore le fichier de debug
+debug.log

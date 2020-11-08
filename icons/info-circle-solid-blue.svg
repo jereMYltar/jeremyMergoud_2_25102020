@@ -10,13 +10,13 @@
    aria-hidden="true"
    focusable="false"
    data-prefix="fas"
-   data-icon="child"
-   class="svg-inline--fa fa-child fa-w-12"
+   data-icon="info-circle"
+   class="svg-inline--fa fa-info-circle fa-w-16"
    role="img"
-   viewBox="0 0 384 512"
+   viewBox="0 0 512 512"
    version="1.1"
    id="svg4"
-   sodipodi:docname="child-solid.svg"
+   sodipodi:docname="info-circle-solid-blue.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
   <metadata
      id="metadata10">
@@ -26,6 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -44,16 +45,24 @@
      inkscape:window-height="1017"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="0.29347694"
-     inkscape:cx="242.7967"
-     inkscape:cy="201.63891"
+     inkscape:zoom="1.6601562"
+     inkscape:cx="256"
+     inkscape:cy="256"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg4" />
+     inkscape:current-layer="svg4"
+     inkscape:document-rotation="0" />
   <path
-     fill="currentColor"
-     d="M120 72c0-39.765 32.235-72 72-72s72 32.235 72 72c0 39.764-32.235 72-72 72s-72-32.236-72-72zm254.627 1.373c-12.496-12.497-32.758-12.497-45.254 0L242.745 160H141.254L54.627 73.373c-12.496-12.497-32.758-12.497-45.254 0-12.497 12.497-12.497 32.758 0 45.255L104 213.254V480c0 17.673 14.327 32 32 32h16c17.673 0 32-14.327 32-32V368h16v112c0 17.673 14.327 32 32 32h16c17.673 0 32-14.327 32-32V213.254l94.627-94.627c12.497-12.497 12.497-32.757 0-45.254z"
+     d="M 256,8 C 119.043,8 8,119.083 8,256 8,392.997 119.043,504 256,504 392.957,504 504,392.997 504,256 504,119.083 392.957,8 256,8 Z"
      id="path2"
+     style="stroke:#f2f2f2;stroke-opacity:1;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-opacity:0" />
+  <path
+     d="m 312,372 c 0,6.627 -5.373,12 -12,12 h -88 c -6.627,0 -12,-5.373 -12,-12 v -24 c 0,-6.627 5.373,-12 12,-12 h 12 v -64 h -12 c -6.627,0 -12,-5.373 -12,-12 v -24 c 0,-6.627 5.373,-12 12,-12 h 64 c 6.627,0 12,5.373 12,12 v 100 h 12 c 6.627,0 12,5.373 12,12 z"
+     id="path839"
      style="fill:#0065fc;fill-opacity:1" />
+  <path
+     d="m 256,118 c 23.196,0 42,18.804 42,42 0,23.196 -18.804,42 -42,42 -23.196,0 -42,-18.804 -42,-42 0,-23.196 18.804,-42 42,-42 z"
+     id="path837"
+     style="fill:#0065fc;fill-opacity:1;stroke:none" />
 </svg>
