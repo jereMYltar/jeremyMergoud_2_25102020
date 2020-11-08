@@ -219,11 +219,17 @@ a:focus {
 
 /* Filters zone */
 
-.filters {
+.filters_bloc {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     margin: 20px 0;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .button {
@@ -277,7 +283,7 @@ a:focus {
 
 .infos {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .infos .icons {
@@ -293,7 +299,7 @@ a:focus {
 
 .bloc {
     margin-top: 40px;
-    padding: 0 10px 5px 40px;
+    padding: 0 25px;
     background-color: #f2f2f2;
     border-radius: 20px;
 }
@@ -302,13 +308,18 @@ a:focus {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin: 0 15px;
 }
 
 .center_bloc {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 25px;
+    margin-top: 10px;
     justify-content: center;
+}
+
+.bottom_bloc {
+    margin: 30px 0 50px 15px;
 }
 
 
@@ -320,7 +331,7 @@ a:focus {
     background-color: white;
     border-radius: 20px;
     border: 5px white solid;
-    margin: 0 30px 30px 0;
+    margin: 15px;
     flex: 1;
     display: flex;
 }
@@ -386,10 +397,6 @@ a:focus {
     flex: 1;
 }
 
-.pop_bloc .top_bloc {
-    margin: 0 30px 0 0;
-}
-
 .pop_bloc .tiles {
     flex-direction: row;
     min-width: 300px;
@@ -411,9 +418,12 @@ a:focus {
 
 /* --> Activity */
 
+.activity_bloc .top_bloc {
+    margin: 0;
+}
+
 .activity_bloc .center_bloc {
     margin-right: -30px;
-
 }
 
 .sub_bloc {
@@ -466,7 +476,11 @@ a:focus {
 
 .bottom_page .layout {
     display: flex;
-    padding: 50px 0;
+    padding-bottom: 50px;
+}
+
+.bottom_page .formatting2 {
+    margin-top: 50px;
 }
 
 .part {
@@ -507,6 +521,49 @@ a:focus {
         font-size: 112%;
     }
 
+    .main {
+        flex-direction: column-reverse;
+    }
+
+    .bloc {
+        padding: 0 0 25px 0;
+    }
+
+    .host_bloc {
+        margin-right: 0;
+    }
+
+    .pop_bloc .center_bloc {
+        justify-content: flex-start;
+    }
+
+    .pop_bloc .tiles {
+        min-width: 270px;
+        max-width: 45%;
+    }
+
+    .host_bloc .tiles {
+        min-width: 270px;
+    }
+
+    .activity_bloc .top_bloc {
+        margin-left: 15px;
+    }
+
+    .activity_bloc .center_bloc {
+        margin: 0;
+    }
+
+    .activity_bloc .group {
+        margin: 0;
+    }
+
+    .activity_bloc .tiles {
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .switch_d {
         display: none;
     }
@@ -514,9 +571,7 @@ a:focus {
     .switch_m {
         display: flex;
     }
-}
-
-@media screen and (max-width: 768px) {
+    
     html {
         font-size: 125%;
     }
@@ -535,24 +590,74 @@ a:focus {
         width: auto;
     }
 
+    .title {
+        margin: 0 15px;
+    }
+
+    .search {
+        justify-content: center;
+        position: relative;
+        left: 7.5px;
+    }
+
+    .search_txt {
+        width: 70%;
+        max-width: 500px;
+    }
+
+    .filters_bloc {
+        margin: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filters_bloc .formatting2 {
+        margin: 40px 15px 0;
+    }
+
+    .infos {
+        margin: 0 15px;
+    }
+
     .bloc {
         border-radius: 0;
-        padding: 0 0 25px 0;
-    }
-
-    .tiles {
-        margin: 10px 15px 0 15px;
-    }
-
-    .main {
-        flex-direction: column-reverse;
     }
 
     .host_bloc {
-        margin-right: 0;
+        background-color: #ffffff;
+    } 
+
+    .pop_bloc .center_bloc {
+        flex-direction: column;
+    }
+
+    .pop_bloc .tiles {
+        max-width: none;
+    }
+
+    .host_bloc .tiles {
+        min-width: 40%;
+        min-width: 300px;
+    }
+
+    .host_bloc .bottom_bloc {
+        margin-bottom: 0;
+    }
+
+    .activity_bloc .group {
+        height: auto;
+        min-width: 340px;
+    }
+
+    .activity_bloc .tiles {
+        height: 200px;
     }
 
     .bottom_page .layout {
         flex-direction: column;
+    }
+
+    .part {
+        margin-left: 25px;
     }
 }
