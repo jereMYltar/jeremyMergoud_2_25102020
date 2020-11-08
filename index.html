@@ -4,32 +4,43 @@
 	<meta charset="utf-8">
 	<title>Reservia</title>
 	<link rel="stylesheet" type="text/css" href="css/StyleSheet1.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 </head>
 <body>
 
 	<header class="layout"> <!-- Here is the header -->
-		<img src="images/logo/Reservia.svg" class="logo" alt="Logo de Reservia">
-		<nav>
-			<a href="#Host">Hébergement</a>
-			<a href="#Activity">Activités</a>
-			<a href="#" class="registration">S'inscrire</a>
-		</nav>
+		<div class="head1">
+			<img src="images/logo/Reservia.svg" class="logo" alt="Logo de Reservia">
+			<nav class="head1_right">
+				<a href="#Host" class="head1_buttons switch_d">Hébergement</a>
+				<a href="#Activity" class="head1_buttons switch_d">Activités</a>
+				<a href="#" class="head1_buttons registration">S'inscrire</a>
+			</nav>
+		</div>
+		<div class="head2 switch_m">
+			<a href="#Host" class="head2_buttons">Hébergement</a>
+			<a href="#Activity" class="head2_buttons">Activités</a>
+		</div>
 	</header>
 
 	<section class="layout title"> <!-- Title -->
 		<h1 class="formatting1">Trouvez votre hébergement pour des vacances de rêve</h1>
-		<h4 class="formatting4">En plein centre ville ou en pleine nature</h4>	
+		<h2 class="formatting4">En plein centre ville ou en pleine nature</h2>	
 	</section>
 
 	<section class="layout"> <!-- search bar & filter -->
 		<form>
-			<div class="search"> <!-- Search zone -->
+			<div class="search">
+				<!-- Search zone -->
 				<div class="search_ico"><img src="icons/map-marker-alt-solid.svg" class="icons" alt="Search icon" /></div>
 				<input type="text" placeholder="Sélectionner votre ville" class="search_txt" id="" />
-				<input type="submit" value="Rechercher" class="search_but" />
+				<button type="button" name="search" class="s_but switch_d">Rechercher</button>
+				<button type="button" name="search" class="s_but small_s_but switch_m">
+					<span><img src="icons/search-solid-white.svg" class="icons" alt="Search icon" /></span>
+				</button>
 			</div>
 			<div class="filters"> <!-- Filters zone -->
-				<h2 class="formatting2">Filtres</h2>
+				<p class="formatting2">Filtres</p>
 				<button type="button" name="eco" class="button">
 					<span class="icon_bg"><img src="icons/money-bill-wave-solid.svg" class="icons" alt="Money icon" /></span>
 					<span>Économique</span>
@@ -51,14 +62,14 @@
 		<div class="infos">
 			<!-- Informationnal row -->
 			<img src="icons/info-circle-solid-blue.svg" class="icons" alt="Info icon" />
-			<h4 class="formatting4">Plus de 500 logements sont disponibles dans cette ville.</h4>
+			<p class="formatting4">Plus de 500 logements sont disponibles dans cette ville.</p>
 		</div>
 	</section>
 
 	<section class="layout main"> <!-- Host & popularity -->
 		<article id="Host" class="bloc host_bloc">
 			<div class="top_bloc">
-				<h1 class="formatting1">Hébergement à Marseille</h1>
+				<h2 class="formatting1">Hébergement à Marseille</h2>
 			</div>
 			<div class="center_bloc"> <!-- Hosts -->
 				<a href="#" class="tiles">
@@ -67,7 +78,7 @@
 					</div>
 					<div class="description">
 						<div>
-							<h3 class="formatting3""formatting3">Auberge la Cannebière</h3>
+							<h3 class="formatting3">Auberge la Cannebière</h3>
 							<p class="formatting5">Nuit à partir de <strong>25€</strong></p>
 						</div>
 						<div>
@@ -153,7 +164,7 @@
 
 		<aside id="Popular" class="bloc pop_bloc">
 			<div class="top_bloc">
-				<h1 class="formatting1">Les plus populaires</h1>
+				<h2 class="formatting1">Les plus populaires</h2>
 				<img src="icons/chart-line-solid.svg" class="icons" alt="Chart icon" />
 			</div>
 			<div class="center_bloc"> <!-- Popular --> 
@@ -205,7 +216,7 @@
 	
 	<section class="layout activity_bloc" id="Activity">
 		<div class="top_bloc">
-            <h1 class="formatting1">Activités à Marseille</h1>
+            <h2 class="formatting1">Activités à Marseille</h2>
 		</div>
 		<div class="center_bloc">
 			<!-- Activity -->
@@ -277,23 +288,23 @@
 			<div class="part">
 				<h2 class="formatting2">A propos</h2>
 				<ol>
-					<li><a href="">Fonctionnement du site</a></li>
-					<li><a href="">Conditions générales de vente</a></li>
-					<li><a href="">Données et confidentialités</a></li>
+					<li><a href="" class="formatting4">Fonctionnement du site</a></li>
+					<li><a href="" class="formatting4">Conditions générales de vente</a></li>
+					<li><a href="" class="formatting4">Données et confidentialités</a></li>
 				</ol>
 			</div>
 			<div class="part">
 				<h2 class="formatting2">Nos hébergements</h2>
 				<ol>
-					<li><a href="">Charte qualité</a></li>
-					<li><a href="">Soumettre votre hôtel</a></li>
+					<li><a href="" class="formatting4">Charte qualité</a></li>
+					<li><a href="" class="formatting4">Soumettre votre hôtel</a></li>
 				</ol>
 			</div>
 			<div class="part">
 				<h2 class="formatting2">Assistance</h2>
 				<ol>
-					<li><a href="">Centre d'aide</a></li>
-					<li><a href="">Nous contacter</a></li>
+					<li><a href="" class="formatting4">Centre d'aide</a></li>
+					<li><a href="" class="formatting4">Nous contacter</a></li>
 				</ol>
 			</div>
 		</div>

@@ -12,12 +12,35 @@
 
 
 
-/* Generals elements */
+/* Generals rules */
 
 * {
     font-family: "RalewayBold", Arial, serif;
+    font-size: 1.0rem;
     margin: 0;
+    text-decoration: none;
 }
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    color: #0065FC;
+    font-weight: bold;
+}
+
+a:focus {
+    outline: none;
+    color: #0065FC;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+
+/* Generic styles */
 
 .icons {
     height: 20px;
@@ -30,29 +53,27 @@
 }
 
 .formatting1 {
-    font-size: 1.3em;
+    font-size: 1.3rem;
     margin: 50px 0 0 0;
 }
 
 .formatting2 {
-    font-size: 1.1em;
+    font-size: 1.1rem;
     margin: 0;
 }
 
 .formatting3 {
-    font-size: 1.0em;
     margin: 12px 0 0 0;
 }
 
 .formatting4 {
     font-family: "RalewayRegular", Arial, serif;
-    font-size: 1.0em;
     margin: 12px 0 0 0;
 }
 
 .formatting5 {
     font-family: "RalewayRegular", Arial, serif;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     margin: 12px 0 0 0;
 }
 
@@ -79,28 +100,6 @@
 
 
 
-/* Links */
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    color: #0065FC;
-    font-weight: bold;
-}
-
-a:focus {
-    outline: none;
-    color: #0065FC;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-
-
-
 /* Header */
 
 .logo {
@@ -111,25 +110,42 @@ a:focus {
     color: #0065FC;
 }
 
-header {
+.head1 {
     display: flex;
     justify-content: space-between;
 }
 
-nav {
-    width: 300px;
+.head1_right {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
-nav a {
+.head1_buttons {
     padding-top: 50px;
-    font-size: 1em;
+    margin-left: 30px;
 }
 
-nav a:hover {
+.head1_buttons:hover {
     padding-top: 48px;
     border-top: 2px #0065FC solid;
+}
+
+.head2 {
+    display: flex;
+}
+
+.head2_buttons {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.head2_buttons:hover {
+    color: #0065FC;
+    border-bottom: 2px solid #0065FC;
 }
 
 
@@ -154,7 +170,6 @@ nav a:hover {
 }
 
 .search_txt {
-    font-size: 1.0em;
     height: 46px;
     width: 235px;
     border: none;
@@ -162,8 +177,8 @@ nav a:hover {
     border-bottom: 1px solid #f2f2f2;
 }
 
-.search_but {
-    font-size: 1.1em;
+.s_but {
+    font-size: 1.1rem;
     color: white;
     padding: 0 15px;
     background-color: #0065FC;
@@ -172,21 +187,28 @@ nav a:hover {
     border: none;
     box-shadow: none;
     cursor: pointer;
+    align-items: center;
 }
 
-.search_but:active {
+.small_s_but {
+    border-radius: 15px;
+    position: relative;
+    left: -15px;
+}
+
+.s_but:active {
     outline: none;
     background-color: #DEEBFF;
     color: #0065FC;
 }
 
-.search_but:hover {
+.s_but:hover {
     outline: none;
     background-color: #DEEBFF;
     color: #0065FC;
 }
 
-.search_but:focus {
+.s_but:focus {
     outline: none;
     background-color: #DEEBFF;
     color: #0065FC;
@@ -211,7 +233,7 @@ nav a:hover {
     border: 2px solid #f2f2f2;
     border-radius: 25px;
     margin: 10px 12px;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     background-color: white;
     padding: 0 15px 0 0;
     cursor: pointer;
@@ -289,10 +311,6 @@ nav a:hover {
     justify-content: center;
 }
 
-.bottom_bloc {
-    font-size: 1.0em;
-}
-
 
 
 
@@ -328,7 +346,7 @@ nav a:hover {
 .stars {
     height: 10px;
     margin: 12px 0 7px 0px;
-    align-self: flex-start
+    align-self: flex-start;
 }
 
 
@@ -368,7 +386,7 @@ nav a:hover {
     flex: 1;
 }
 
-.pop_bloc header {
+.pop_bloc .top_bloc {
     margin: 0 30px 0 0;
 }
 
@@ -461,6 +479,80 @@ nav a:hover {
 }
 
 .bottom_page li {
-    margin-top: 10px;
-    font-size: 1.0em;
+    margin-top: 18px;
+}
+
+
+
+
+/* Règle générale */
+
+.switch_d {
+    display: flex;
+}
+
+.switch_m {
+    display: none;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .layout {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    html {
+        font-size: 112%;
+    }
+
+    .switch_d {
+        display: none;
+    }
+
+    .switch_m {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 125%;
+    }
+
+    .layout {
+        margin: 0;
+    }
+
+    .head1 {
+        align-items: center;
+        padding: 0 15px 0 15px;
+    }
+
+    .logo {
+        height: 70px;
+        width: auto;
+    }
+
+    .bloc {
+        border-radius: 0;
+        padding: 0 0 25px 0;
+    }
+
+    .tiles {
+        margin: 10px 15px 0 15px;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+    }
+
+    .host_bloc {
+        margin-right: 0;
+    }
+
+    .bottom_page .layout {
+        flex-direction: column;
+    }
 }
