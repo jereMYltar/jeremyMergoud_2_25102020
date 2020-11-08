@@ -1,0 +1,411 @@
+/* Specifics fonts */
+@font-face {
+	font-family: "RalewayRegular";
+	src: url("../fonts/Raleway/static/Raleway-Regular.ttf");
+}
+
+@font-face {
+	font-family: "RalewayBold";
+	src: url("../fonts/Raleway/static/Raleway-Bold.ttf");
+}
+
+
+
+
+/* Generals elements */
+.icons {
+	height: 20px;
+	width: 20px;
+}
+
+.layout {
+	max-width: 1330px;
+	margin: auto;
+}
+
+body {
+	font-family: "RalewayRegular", Arial, serif;
+	margin: 0;
+}
+
+h1 {
+	font-family: "RalewayBold", Arial, serif;
+	font-size: 1.3em;
+}
+
+p {
+	font-size: 1.0em;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #0065FC;
+	font-weight: bold;
+}
+
+a:focus {
+	outline: none;
+	color: #0065FC;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+
+
+/* Header */
+
+.logo {
+	margin-top: 50px;
+}
+
+.registration {
+	font-family: "RalewayBold", Arial, serif;
+	color: #0065FC;
+}
+
+.title h1 {
+	margin: 50px 0 0 0;
+}
+
+.title p {
+	margin: 10px 0 0 0;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav {
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav a {
+	padding-top: 50px;
+	font-size: 1em;
+}
+
+nav a:hover {
+	padding-top: 48px;
+	border-top: 2px #0065FC solid;
+}
+
+
+
+
+/* Search zone */
+
+.search {
+	display: flex;
+	align-items: center;
+	margin: 20px 0 0 0;
+}
+
+.search div {
+	height: 50px;
+	width: 50px;
+	background-color: #f2f2f2;
+	border-radius: 15px 0 0 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.search input[type=text] {
+	font-family: "RalewayBold", Arial, serif;
+	font-size: 1.0em;
+	height: 46px;
+	width: 235px;
+	border: none;
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.search input[type=submit] {
+	font-family: "RalewayBold", Arial, serif;
+	font-size: 1.1em;
+	color: white;
+	padding: 0 15px;
+	background-color: #0065FC;
+	height: 50px;
+	border-radius: 0 15px 15px 0;
+	border: none;
+	box-shadow: none;
+}
+
+.search input[type=submit]:active {
+	outline: none;
+	background-color: #f2f2f2;
+	color: black;
+}
+
+
+
+
+/* Filters zone */
+
+.filters {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 30px 0 0 0;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	height: 46px;
+	border: 2px solid #f2f2f2;
+	border-radius: 25px;
+	margin-left: 25px;
+}
+
+.button div {
+	height: 50px;
+	width: 50px;
+	background-color: #DEEBFF;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	left: -2px;
+}
+
+.button input[type=button] {
+	font-family: "RalewayBold", Arial, serif;
+	font-size: 1.1em;
+	background-color: white;
+	padding: 0 15px;
+	border: none;
+	box-shadow: none;
+}
+
+.button input[type=button]:active {
+	outline: none;
+	color: #0065FC;
+}
+
+.button input[type=button]:hover {
+	outline: none;
+	color: #0065FC;
+}
+
+.button input[type=button]:focus {
+	outline: none;
+	color: #0065FC;
+}
+
+
+
+
+/* Informationnal row */
+
+.infos {
+	margin: 40px 0;
+	display: flex;
+	align-items: center;
+}
+
+.infos .icons {
+	height: 25px;
+	width: 25px;
+	margin-right: 10px;
+}
+
+
+
+
+/* Main section */
+
+article {
+	flex: 2;
+	margin-right: 40px;
+}
+
+aside {
+	flex: 1;
+}
+
+.main {
+	display: flex;
+	justify-content: space-between;
+}
+
+.bloc {
+	padding: 50px 10px 5px 40px;
+	background-color: #f2f2f2;
+	border-radius: 20px;
+}
+
+.bloc h1 {
+	margin: 0 40px 25px 0;
+}
+
+.more {
+	font-family: "RalewayBold", Arial, serif;
+	font-size: 1.1em;
+}
+
+.tiles {
+	background-color: white;
+	border-radius: 20px;
+	border: 5px white solid;
+	flex: 1;
+	display: flex ;
+}
+
+.tiles h1 {
+	font-family: "RalewayBold", Arial, serif;
+	font-size: 1.0em;
+	margin: 12px 0 0 12px;
+}
+
+.tiles p {
+	font-size: 0.9em;
+	margin: 12px 0 0px 12px;
+}
+
+.illustration {
+	display: flex;
+}
+
+.photo {
+	flex: 1;
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: cover;
+}
+
+.description {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.stars {
+	height: 10px;
+	margin: 12px 0 7px 12px;
+	align-self: flex-start
+}
+
+
+
+
+/* Main section --> Hosts */
+
+.hosts {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+article .tiles {
+	flex-direction: column;
+	min-width: 200px;
+	margin: 0 30px 30px 0;
+	box-shadow: 5px 5px 10px #e3e3e3;
+}
+
+article .illustration {
+	max-height: 120px;
+}
+
+article .photo {
+	border-radius: 15px 15px 0 0;
+}
+
+
+
+
+/* Main section --> Most popular */
+
+aside .tiles {
+	flex-direction: row;
+	min-width: 300px;
+	margin: 0 30px 30px 0;
+	box-shadow: 5px 5px 10px #e3e3e3;
+}
+
+aside .illustration {
+	width: 140px;
+	height: 140px;
+}
+
+aside .photo {
+	border-radius: 15px 0 0 15px;
+}
+
+aside header {
+	margin: 0 35px 0 0;
+}
+
+
+
+
+/* Main section --> Activity */
+
+.activity {
+	display:flex;
+	max-width:100%;
+	max-height: 450px;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+}
+
+.activity .tiles {
+	flex-direction: column;
+	max-width: 300px;
+	margin: 0 30px 30px 0;
+	box-shadow: 5px 5px 10px #f2f2f2;
+	border: none;
+}
+
+.activity .illustration {
+	max-height: 390px;
+}
+
+.activity .photo {
+	border-radius: 15px 15px 0 0;
+}
+
+
+
+
+
+/* Footer */
+
+footer {
+	background-color: #f2f2f2;
+}
+
+footer div.layout {
+	display: flex;
+}
+
+footer ol {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+footer li {
+	margin-top: 10px;
+	font-size: 1.0em;
+}
+
+footer h1 {
+	font-size: 1.1em;
+	margin-bottom: 20px;
+}
+
+.part {
+	flex: 1;
+}

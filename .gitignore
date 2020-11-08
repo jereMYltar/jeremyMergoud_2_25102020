@@ -3,5 +3,6 @@
 */**/~*
 Consignes/
 
-#ignore les fichiers VS
+
+#ignore le dossier Visual Studio
 .vs/
