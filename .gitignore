@@ -4,6 +4,3 @@
 Divers_non_suivi/
 
 
-#ignore le dossier Visual Studio
-.vs/
-/debug.log
