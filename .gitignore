@@ -1,7 +1,7 @@
 #ignore les fichiers temporaires à la racine et dans les sous-dossiers
 ~*
 */**/~*
-Consignes/
+Divers_non_suivi/
 
 
 #ignore le dossier Visual Studio
