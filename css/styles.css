@@ -596,6 +596,7 @@ a:focus {
 
     .search {
         justify-content: center;
+        margin: 20px 0 0 15px;
     }
 
     .search_txt {
