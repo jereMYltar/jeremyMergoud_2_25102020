@@ -422,24 +422,26 @@ a:focus {
     margin: 0;
 }
 
-.activity_bloc .center_bloc {
-    margin-right: -30px;
-}
-
 .sub_bloc {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
 }
 
+.sub_bloc:not(:last-child) {
+    margin-right: 30px;
+}
 
 .activity_bloc .group {
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-right: 30px;
     min-width: 250px;
     height: 450px;
+}
+
+.activity_bloc .group:not(:last-child) {
+    margin-right: 30px;
 }
 
 .activity_bloc .tiles {
@@ -516,6 +518,16 @@ a:focus {
     }
 }
 
+@media screen and (max-width: 1150px) {
+    .sub_bloc {
+        flex-direction: column;
+    }
+
+    .activity_bloc .group:not(:last-child) {
+        margin: 0;
+    }
+}
+
 @media screen and (max-width: 1023px) {
     html {
         font-size: 112%;
@@ -548,18 +560,6 @@ a:focus {
 
     .activity_bloc .top_bloc {
         margin-left: 15px;
-    }
-
-    .activity_bloc .center_bloc {
-        margin: 0;
-    }
-
-    .activity_bloc .group {
-        margin: 0;
-    }
-
-    .activity_bloc .tiles {
-        margin: 15px;
     }
 }
 
@@ -596,8 +596,6 @@ a:focus {
 
     .search {
         justify-content: center;
-        position: relative;
-        left: 7.5px;
     }
 
     .search_txt {
@@ -644,12 +642,22 @@ a:focus {
         margin-bottom: 0;
     }
 
+    .activity_bloc .center_bloc {
+        margin: 0;
+    }
+
+    .sub_bloc:not(:last-child) {
+        margin-right: 0;
+    }
+
     .activity_bloc .group {
+        margin: 0;
         height: auto;
         min-width: 340px;
     }
 
     .activity_bloc .tiles {
+        margin: 15px;
         height: 200px;
     }
 
@@ -659,5 +667,46 @@ a:focus {
 
     .part {
         margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    html {
+        font-size: 90%;
+    }
+
+    .pop_bloc .tiles {
+        flex-direction: column;
+        min-width: 150px;
+    }
+
+    .pop_bloc .illustration {
+        width: 100%;
+        max-height: 120px;
+    }
+
+    .pop_bloc .photo {
+        border-radius: 15px 15px 0 0
+    }
+
+    .host_bloc .tiles {
+        min-width: 150px;
+    }
+
+    .activity_bloc .center_bloc {
+        flex-direction: column;
+    }
+
+    .activity_bloc .group {
+        min-width: 150px;
+    }
+
+    .activity_bloc .tiles {
+        height: 150px;
+    }
+
+    .activity_bloc .illustration {
+        width: 100%;
+        max-height: 120px;
     }
 }
